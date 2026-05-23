@@ -33,6 +33,7 @@ Muchas empresas manejan reportes mensuales separados en diferentes archivos Exce
 automatizacion-reportes-excel-python/
 │
 ├── reporte_ventas.py
+├── ejecutar_reporte.bat
 ├── README.md
 ├── requirements.txt
 ├── ventas/
@@ -63,6 +64,6 @@ py reporte_ventas.py
 
 ejecutar_reporte.bat
 
-. El reporte final se generará automáticamente en:
+7. El reporte final se generará automáticamente en:
 
 output/reporte_final.xlsx
