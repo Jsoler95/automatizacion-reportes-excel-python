@@ -15,6 +15,7 @@ Muchas empresas manejan reportes mensuales separados en diferentes archivos Exce
 - Convierte columnas numéricas como `cantidad` y `precio`.
 - Elimina filas con datos incompletos o inválidos.
 - Calcula una nueva columna llamada `total`.
+- Agrega una columna `archivo_origen` para identificar de qué archivo proviene cada fila.
 - Genera un archivo Excel final con varias hojas:
   - `Datos completos`
   - `Resumen por ciudad`
@@ -42,6 +43,7 @@ automatizacion-reportes-excel-python/
 │   └── ventas_marzo.xlsx
 └── output/
     └── reporte_final.xlsx
+```
 
 ## Cómo ejecutar el proyecto
 
@@ -51,19 +53,38 @@ automatizacion-reportes-excel-python/
 
 ```bash
 py -m pip install -r requirements.txt
+```
 
-3. Coloca los archivos Excel dentro de la carpeta ventas/.
+3. Coloca los archivos Excel dentro de la carpeta `ventas/`.
 
 4. Ejecuta el proyecto con una de estas opciones:
 
-5. Ejecuta el script desde la terminal:
+**Opción 1: desde la terminal**
 
+```bash
 py reporte_ventas.py
+```
 
-6. Haz doble click en:
+**Opción 2: en Windows usando el archivo .bat**
 
+Haz doble clic en:
+
+```text
 ejecutar_reporte.bat
+```
 
-7. El reporte final se generará automáticamente en:
+Este archivo ejecuta el script automáticamente y abre el reporte final cuando termina.
 
+5. El reporte final se generará automáticamente en:
+
+```text
 output/reporte_final.xlsx
+```
+
+Luego guarda y sube:
+
+```bash
+git add README.md
+git commit -m "Corregir formato del README"
+git push
+```
