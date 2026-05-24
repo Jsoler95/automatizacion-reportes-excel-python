@@ -80,11 +80,3 @@ Este archivo ejecuta el script automáticamente y abre el reporte final cuando t
 ```text
 output/reporte_final.xlsx
 ```
-
-Luego guarda y sube:
-
-```bash
-git add README.md
-git commit -m "Corregir formato del README"
-git push
-```
